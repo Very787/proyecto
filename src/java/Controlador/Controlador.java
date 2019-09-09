@@ -14,9 +14,10 @@ import javax.servlet.http.HttpServletResponse;
 
 public class Controlador extends HttpServlet {
 
-    String listar="vistas/listar.jsp";
-    String add="vistas/add.jsp";
-    String edit="vistas/edit.jsp";
+    String listar="vistas/persona/listar.jsp";
+    String add="vistas/persona/add.jsp";
+    String edit="vistas/persona/edit.jsp";
+    String inicio="index.jsp";
     Persona p=new Persona();
     PersonaDAO dao=new PersonaDAO();
     int id;
@@ -47,6 +48,8 @@ public class Controlador extends HttpServlet {
             acceso=listar;            
         }else if(action.equalsIgnoreCase("add")){
             acceso=add;
+        }else if(action.equalsIgnoreCase("inicio")){
+            acceso=inicio;
         }
         else if(action.equalsIgnoreCase("Agregar")){
             String ced=request.getParameter("txtCed");

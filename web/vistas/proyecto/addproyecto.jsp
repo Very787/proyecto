@@ -1,8 +1,3 @@
-<%-- 
-    Document   : add
-    Created on : 30-ago-2018, 19:58:16
-    Author     : Joel
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -15,14 +10,14 @@
     <body>
         <div class="container">
             <div class="col-lg-6">
-                <h1>Agregar Persona</h1>
-                <form action="Controlador">
-                    DNI:<br>
-                    <input class="form-control" type="text" name="txtCed"><br>
-                    Nombres: <br>
-                    <input class="form-control" type="text" name="txtNom"><br>
+                <h1>Agregar Proyecto</h1>
+                <form action="ProyectoControlador">
+                    DESCRIPCION:<br>
+                    <input class="form-control" type="text" name="txtDesc"><br>
+                    USUARIO: <br>
+                    <input class="form-control" type="text" name="txtId"><br>
                     <input class="btn btn-primary" type="submit" name="accion" value="Agregar">
-                    <a href="Controlador?accion=listar">Regresar</a>
+                    <a href="ProyectoControlador?accion=listarproyecto">Regresar</a>
                 </form>
             </div>
 

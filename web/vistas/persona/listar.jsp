@@ -46,9 +46,11 @@
                         </td>
                     </tr>
                     <%}%>
+                    
+                    
                 </tbody>
             </table>
-
+            <a class="btn btn-danger" href="Controlador?accion=inicio">Salir</a>
         </div>
     </body>
 </html>
